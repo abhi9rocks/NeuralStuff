@@ -1,5 +1,5 @@
 # Tensorflow Object Detection Walkthrough
-<p>These two notebooks are complete guide to Train and detect objests</a>. <img src="https://i.imgur.com/H3tUyKM.png">
+<p>These two notebooks are complete guide to Train and detect objests</a>. 
 
 ## Steps
 <br />
