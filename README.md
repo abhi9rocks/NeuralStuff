@@ -1,5 +1,6 @@
 # Tensorflow Object Detection Walkthrough
-<p>These two notebooks are complete guide to Train and detect objests</a>. 
+<p>These two notebooks are complete guide to Train and detect objests</a>.
+<p>The generate_tfrecord file is applicable on any dataset</a>
 
 ## Steps
 <br />
