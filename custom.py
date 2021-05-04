@@ -40,7 +40,7 @@ class CustomConfig(Config):
     IMAGES_PER_GPU = 1
  
     # Number of classes (including background)
-    NUM_CLASSES = 1 + 2  # Background + toy
+    NUM_CLASSES = 1 + 1  # Background + toy
  
     # Number of training steps per epoch
     STEPS_PER_EPOCH = 100
@@ -90,7 +90,7 @@ class CustomDataset(utils.Dataset):
         # The VIA tool saves images in the JSON even if they don't have any
         # annotations. Skip unannotated images.
         annotations = [a for a in annotations if a['regions']]
- 
+        print(annotations[0])
         # Add images
         for a in annotations:
             # print(a)
@@ -98,7 +98,7 @@ class CustomDataset(utils.Dataset):
             # the outline of each object instance. There are stores in the
             # shape_attributes (see json format above)
             polygons = [r['shape_attributes'] for r in a['regions']]
-            objects = [s['region_attributes']['helmet'] for s in a['regions']]
+            objects = [s['region_attributes']['name'] for s in a['regions']] ####Add the name of region attribute selected during annotation
             print("objects:",objects)
             name_dict = {"helmet": 1}
             # key = tuple(name_dict)
