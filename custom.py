@@ -6,6 +6,8 @@ import numpy as np
 import skimage.draw
 import cv2
 import matplotlib.pyplot as plt
+from tensorflow.keras import Sequential
+from tensorflow.keras.layers import Conv2D, Flatten, Dense
  
 # Root directory of the project
 ROOT_DIR = os.path.abspath("../../")
